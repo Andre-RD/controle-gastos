@@ -7,3 +7,4 @@ export interface Categoria {
   tipo: 'GASTO' | 'RECEITA';
 }
 
+

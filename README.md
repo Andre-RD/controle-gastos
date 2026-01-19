@@ -90,6 +90,43 @@ interface Lancamento {
 - MatDatepicker
 - MatIcon
 
+## 🚀 Deploy no Vercel
+
+### Pré-requisitos
+- Conta no [Vercel](https://vercel.com)
+- Projeto no GitHub/GitLab/Bitbucket
+
+### Deploy Automático
+
+1. **Conecte seu repositório ao Vercel:**
+   - Acesse [vercel.com](https://vercel.com)
+   - Clique em "New Project"
+   - Importe seu repositório Git
+   - O Vercel detectará automaticamente as configurações do Angular
+
+2. **Configurações do Build:**
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist/controle-financeiro`
+   - **Install Command**: `npm install`
+
+3. **Deploy:**
+   - O Vercel fará o deploy automaticamente
+   - Cada push na branch principal gerará um novo deploy
+
+### Arquivos de Configuração
+
+O projeto já inclui:
+- `vercel.json` - Configuração do Vercel com rewrites para SPA
+- `.vercelignore` - Arquivos ignorados no deploy
+
+### Build Local para Teste
+
+```bash
+npm run build
+```
+
+O build será gerado em `dist/controle-financeiro/`
+
 ## 📄 Licença
 
 Este projeto é de uso pessoal.

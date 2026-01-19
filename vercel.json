@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "framework": "angular",
-  "buildCommand": "npm run vercel-build",
-  "outputDirectory": "dist/front-monitor",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/controle-financeiro",
   "installCommand": "npm install",
-  "routes": [
-    { "src": "/assets/(.*)", "dest": "/assets/$1" },
-    { "src": "/(.*\\.(js|css|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot))", "dest": "/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    {
+      "source": "/assets/:path*",
+      "destination": "/assets/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
-
